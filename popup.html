@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8" />
+		<title>ZWF-Injector</title>
+
+		<style type="text/css">
+			
+			body {
+				background-color: #E0E0E0;
+			}
+
+			label, input {
+				display: block;
+				font-size: 14px;
+			}
+
+		</style>
+
+		<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="utils/enc.js"></script>
+		<script type="text/javascript" src="utils/dec.js"></script>
+		<script type="text/javascript" src="popup.js"></script>
+
+	</head>
+
+	<body>
+
+		<label for="messagePlain">Message</label>
+		<input type="text" id="messagePlain" />
+		<label for="fingerprint">Fingerprint</label>
+		<input type="text" id="fingerprint" />
+		<label for="injected">Result</label>
+		<input type="text" id="injected" />
+		<input type="button" id="inject" value="Inject" /> <br>
+
+		<label for="messageWithSecret">Message</label>
+		<input type="text" id="messageWithSecret" />
+		<label for="extracted">Fingerprint</label>
+		<input type="text" id="extracted" />
+		<input type="button" id="extract" value="Extract" />
+
+	</body>
+
+</html>
