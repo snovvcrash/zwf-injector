@@ -7,12 +7,12 @@ const textToBinary = text => (
 const binaryToZeroWidth = binary => (
 	binary.split('').map((binaryNum) => {
 		if (binaryNum === '1') {
-			return '\u200c';
+			return ZWNJ;
 		}
 		else if (binaryNum === '0') {
-			return '\u200d';
+			return ZWJ;
 		}
-		return '\u200b'; /* if space */
+		return ZWSP;  /* if space */
 	}).join('')
 );
 
