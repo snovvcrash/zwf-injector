@@ -4,4 +4,4 @@ A tiny Chrome extension that lets you inject invisible zero-width fingerprints (
 
 Inspired by [zero-width-detection](https://github.com/umpox/zero-width-detection).
 
-![Screenshot-1](https://user-images.githubusercontent.com/23141800/39675405-6f1ad5fc-5163-11e8-998c-3d8533ecc706.png)
+![Screenshot-1](https://user-images.githubusercontent.com/23141800/39676952-c2d47f82-517b-11e8-854f-e869969e891a.png)
