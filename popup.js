@@ -1,29 +1,24 @@
 $(document).ready(function() {
 	$('#inject').click(function() {
-		var message = $('#messagePlain').val();
+		var message = $('#message').val();
 		var fingerprint = $('#fingerprint').val();
 
 		if (message && $.trim(fingerprint)) {
-			$('#injected').val(inject(message, fingerprint));
+			$('#result').val(inject(message, fingerprint));
 		}
-	});
-
-	$('#clearInjected').click(function() {
-		$('#messagePlain').val('')
-		$('#fingerprint').val('')
-		$('#injected').val('')
 	});
 
 	$('#extract').click(function() {
-		var message = $('#messageWithSecret').val();
+		var message = $('#message').val();
 
-		if (message) {
-			$('#extracted').val(extract(message));
+		if (message.includes(ZWSP) || message.includes(ZWNJ) || message.includes(ZWJ)) {
+			$('#result').val(extract(message));
 		}
 	});
 
-	$('#clearExtracted').click(function() {
-		$('#messageWithSecret').val('')
-		$('#extracted').val('')
+	$('#clear').click(function() {
+		$('#message').val('')
+		$('#fingerprint').val('')
+		$('#result').val('')
 	});
 });

@@ -25,6 +25,7 @@
 		</style>
 
 		<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="utils/zwchars.js"></script>
 		<script type="text/javascript" src="utils/enc.js"></script>
 		<script type="text/javascript" src="utils/dec.js"></script>
 		<script type="text/javascript" src="popup.js"></script>
@@ -33,21 +34,15 @@
 
 	<body>
 
-		<label for="messagePlain">Message</label>
-		<input type="text" id="messagePlain" size="50" />
+		<label for="message">Message</label>
+		<input type="text" id="message" size="50" />
 		<label for="fingerprint">Fingerprint</label>
 		<input type="text" id="fingerprint" size="50" />
-		<label for="injected">Result</label>
-		<input type="text" id="injected" size="50" /> <br>
+		<label for="result">Result</label>
+		<input type="text" id="result" size="50" /> <br>
 		<input type="button" id="inject" value="Inject" />
-		<input type="button" id="clearInjected" value="Clear" /> <br><br>
-
-		<label for="messageWithSecret">Message</label>
-		<input type="text" id="messageWithSecret" size="50" />
-		<label for="extracted">Fingerprint</label>
-		<input type="text" id="extracted" size="50" /> <br>
 		<input type="button" id="extract" value="Extract" />
-		<input type="button" id="clearExtracted" value="Clear" />
+		<input type="button" id="clear" value="Clear" />
 
 	</body>
 
