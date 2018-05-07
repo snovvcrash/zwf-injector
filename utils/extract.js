@@ -2,8 +2,7 @@ const zeroWidthToBinary = zeroWidth => (
 	zeroWidth.split('').map((char) => {
 		if (char === ZWNJ) {
 			return '1';
-		}
-		else if (char === ZWJ) {
+		} else if (char === ZWJ) {
 			return '0';
 		}
 		return ' ';
@@ -16,8 +15,8 @@ const binaryToText = binary => (
 
 const extract = message => {
 	const fingerprint = message.split('').filter(char => (
-		char === ZWSP || char === ZWNJ || char === ZWJ
+		[ZWSP, ZWNJ, ZWJ].includes(char)
 	)).join('');
-	
+
 	return binaryToText(zeroWidthToBinary(fingerprint));
 }

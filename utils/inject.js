@@ -8,8 +8,7 @@ const binaryToZeroWidth = binary => (
 	binary.split('').map((binaryNum) => {
 		if (binaryNum === '1') {
 			return ZWNJ;
-		}
-		else if (binaryNum === '0') {
+		} else if (binaryNum === '0') {
 			return ZWJ;
 		}
 		return ZWSP;  /* if space */
@@ -17,5 +16,5 @@ const binaryToZeroWidth = binary => (
 );
 
 const inject = (message, fingerprint) => (
-	message.slice(0, -1) + binaryToZeroWidth(textToBinary(fingerprint)) + message.slice(-1)
+	binaryToZeroWidth(textToBinary(fingerprint)) + message
 );
