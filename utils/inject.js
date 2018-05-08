@@ -16,5 +16,5 @@ const binaryToZeroWidth = binary => (
 );
 
 const inject = (message, fingerprint) => (
-	binaryToZeroWidth(textToBinary(fingerprint)) + message
+	message + binaryToZeroWidth(textToBinary(fingerprint))
 );
