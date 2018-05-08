@@ -12,7 +12,7 @@ const binaryToZeroWidth = binary => (
 			return ZWJ;
 		}
 		return ZWSP;  /* if space */
-	}).join('')
+	}).join(ZWNBSP)
 );
 
 const inject = (message, fingerprint) => (
