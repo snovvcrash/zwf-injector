@@ -1,4 +1,4 @@
-zwf-injector
+zwf-injector ![logo](https://user-images.githubusercontent.com/23141800/39831897-7dae6080-53ce-11e8-8eab-8242db20f7cf.png)
 ==========
 A tiny Chrome extension that lets you inject invisible zero-width fingerprints (secret messages) into text.
 
